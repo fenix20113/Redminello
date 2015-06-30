@@ -1,0 +1,23 @@
+{
+  "name": "trello",
+  "version": "1.0.0",
+  "description": "task manager",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3.16",
+    "angular-ui-router": "~0.2.13",
+    "bootstrap": "~3.3.4",
+    "angular-base64": "https://github.com/ninjatronic/angular-base64.git#master",
+    "angular-local-storage": "https://github.com/grevory/angular-local-storage.git#master",
+    "angular-loading-spinner": "https://github.com/adonespitogo/angular-loading-spinner.git#master",
+    "angular-spinner": "https://github.com/urish/angular-spinner.git#master",
+    "ngDraggable": "~0.1.8"
+  }
+}

@@ -1,0 +1,23 @@
+@import "login";
+@import "project";
+@import "header";
+
+
+body {
+  background: #EAECEE;
+}
+
+.spinner-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+@media (min-width: 1436px) {
+  .container {
+    width: 1436px;
+  }
+}

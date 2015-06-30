@@ -1,0 +1,40 @@
+<div class="tr-project-current row">
+    <!--<project class="col-md-3 tr-project-wrapper" ng-repeat="project in projects"></project>-->
+
+    <div class="col col-lg-4">
+        <div class="issue">
+            <div class="name">New</div>
+            <div class="list" ng-drop="true" ng-drop-success="onDropComplete1($data,$event)">
+                <issue ng-drag="true" ng-drag-data="issue" ng-drag-success=""
+                       ng-repeat="issue in issues | filter:{status: {id: 1}, assigned_to: {id: userId}} "></issue>
+            </div>
+        </div>
+
+    </div>
+    <div class="col col-lg-4">
+        <div class="issue">
+            <div class="name">
+                In Progress
+            </div>
+            <div class="list" ng-drop="true" ng-drop-success="onDropComplete2($data,$event)">
+                <issue ng-drag="true" ng-drag-data="issue" ng-drag-success=""
+                       ng-repeat="issue in issues |filter:{status: {id: 2}, assigned_to: {id: userId}}"></issue>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col col-lg-4">
+        <div class="issue">
+            <div class="name">
+                Done
+            </div>
+            <div class="list" ng-drop="true" ng-drop-success="onDropComplete3($data,$event)">
+                <issue ng-drag="true" ng-drag-data="issue" ng-drag-success=""
+                       ng-repeat="issue in issues |filter:{status: {id: 9}, assigned_to: {id: userId}}"></issue>
+            </div>
+
+        </div>
+
+    </div>
+</div>

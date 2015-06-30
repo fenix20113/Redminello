@@ -1,0 +1,21 @@
+<div  class="tr-issue" ng-class="{'high-priority': issue.priority.id == 3}">
+    <div class="row top">
+        <div class="col-sm-6 col">
+            <div class="name pull-left">
+                #{{issue.id}}
+            </div>
+        </div>
+        <div class="col-sm-6 col">
+
+            <div class="created date pull-right">
+                <span>{{issue.created_on | date:'yyyy/MM/dd'}}</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="description">
+        {{issue.description}}
+    </div>
+
+</div>
+

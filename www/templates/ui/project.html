@@ -1,0 +1,35 @@
+<div class="tr-project">
+    <div class="name">
+        {{project.name}}
+    </div>
+
+    <div class="created date">
+        <span class="title">created</span><span>{{project.created_on | date:'yyyy/MM/dd'}}</span>
+    </div>
+    <div class="updated date">
+        <span class="title">updated</span><span>{{project.updated_on | date:'yyyy/MM/dd'}}</span>
+    </div>
+
+    <div class="memberships-list">
+        <div class="membership" ng-repeat="membership in project.memberships" title="{{membership.user.name}}"></div>
+        <div class="clearfix"></div>
+    </div>
+
+</div>
+<div class="issues row">
+
+    <div class="new col-sm-4 text-center">
+        <div>{{project.issues.new || 0}}</div>
+        <div>New</div>
+    </div>
+    <div class="in-progress col-sm-4 text-center">
+        <div>{{project.issues.inProgress || 0}}</div>
+        <div>In progress</div>
+    </div>
+    <div class="done col-sm-4 text-center">
+        <div>{{project.issues.done || 0}}</div>
+        <div>Done</div>
+    </div>
+
+</div>
+<div class="clearfix"></div>
